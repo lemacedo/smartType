@@ -1,0 +1,23 @@
+body{
+	font-family: "Verdana", "Tre"
+}
+
+
+/*-- Formatação de tipografa ------*/
+
+.tit-prin{
+	color: blue;
+	font-size: 20px;
+}
+
+
+/* -- Estrutura da página ---------*/
+
+ /*.jogo{
+	margin: auto;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #000;
+}
+
+*/ 
