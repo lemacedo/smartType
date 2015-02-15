@@ -3,16 +3,9 @@ libLetras = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q'
 mapLetras = [65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91];
 
 function inicializa(){
-	barraAltura = 15;
-    barraLargura = 90;
- 
-    jogadorPosicaoX = 0;
  
     canvas = document.getElementById("jogo");
     context = canvas.getContext("2d");
-
-    context.font = '40pt Calibre';
-    context.fillstyle = 'blue';
 
     desafio = libLetras[geraPosicao(0,2)];
 
@@ -33,9 +26,6 @@ function pegaTecla(e){
 	}else{
 		alert('Errou '  + tecla + " == " + mapLetras[1]);
 	}
-
-		
-
 }
 
 function exibeDesafio(valor, posX, posY){
