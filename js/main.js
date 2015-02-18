@@ -1,6 +1,6 @@
 
 libLetras = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','x','y','z','w'];
-
+naoRepete = [];
 
 function inicializa(){
     canvas = document.getElementById("jogo");
@@ -29,7 +29,8 @@ document.onkeypress = function(evt){
 }
 
 function geraDesafio(){
-    posKey = geraPosicao(0,26);
+    posKey = geraPosicao(0,3);
+
     desafio = libLetras[posKey];
 
     var posX = geraPosicao(45,450);
@@ -37,6 +38,8 @@ function geraDesafio(){
 
     exibeDesafio( desafio, posX, posY);
 }
+
+
 
 
 function exibeDesafio(valor, posX, posY){
@@ -50,8 +53,5 @@ function geraPosicao(valMin, valMax){
 }
 
 function gameLoop(){
-
     context.clearRect(0, 0, canvas.width+100, canvas.height+100);
- 
-    
 }
